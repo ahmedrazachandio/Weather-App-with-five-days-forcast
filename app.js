@@ -1,8 +1,8 @@
 
-let icon = main.weather.icon;
-icon.replace("/file// ");
-// console.log(icon);
-document.querySelector("#weather_icon").src = icon;
+// let icon = main.weather.icon;
+// icon.replace("/file// ");
+// // console.log(icon);
+// document.querySelector("#weather_icon").src = icon;
 
 
 
