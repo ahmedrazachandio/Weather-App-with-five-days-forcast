@@ -62,6 +62,23 @@ function getWeatherData(){
             h1.appendChild(titleText);
             h1.className = "card-title";
             card_body.appendChild(h1);
+
+            var h4 = document.createElement("h4");
+            card_body.appendChild(h4);
+            var temp_max = element.main.temp_max/10;
+            var title_Text = document.createTextNode(temp_max.toFixed(1)+" " + " Max Temp");
+            h4.appendChild(title_Text);
+            h4.className = "card-title";
+
+            var h4 = document.createElement("h4");
+            card_body.appendChild(h4);
+            var temp_min = element.main.temp_min/10;
+            var title_Text = document.createTextNode(temp_min.toFixed(1)+" " + " Min Temp");
+            h4.appendChild(title_Text);
+            h4.className = "card-title";
+
+
+            
             var p = document.createElement("p");
             var titleText = document.createTextNode(element.dt_txt);
             p.className = "card-text";
