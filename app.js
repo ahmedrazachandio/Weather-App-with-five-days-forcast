@@ -23,7 +23,7 @@
     // Ahmed Raza 
 function getnewWeatherData(){
     var city = document.getElementById("location").value;   
-    axios.get('http://api.weatherapi.com/v1/current.json?key=212cba20af5047c398051557222408&q='+city)
+    axios.get('https://api.weatherapi.com/v1/current.json?key=212cba20af5047c398051557222408&q='+city)
     .then(function (response) {
         console.log(response.data);
         localStorage.setItem("latitude", response.data.location.lat);
