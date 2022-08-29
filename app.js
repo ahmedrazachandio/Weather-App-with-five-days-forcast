@@ -1,4 +1,13 @@
 
+let icon = main.weather.icon;
+icon.replace("/file// ");
+// console.log(icon);
+document.querySelector("#weather_icon").src = icon;
+
+
+
+
+
   
 //    div = document.createElement("div");
 //   div.setAttribute("id", "div1");
@@ -56,6 +65,13 @@ function getWeatherData(){
             card_body = document.createElement("div");
             card_body.className = "card-body";
             card.appendChild(card_body);
+
+
+            // let icon = main.weather.icon;
+            // icon.replace("/file// ");
+            // // console.log(icon);
+            // document.querySelector("#weather_icon").src = icon;
+
             var h1 = document.createElement("h1");
             var temp = element.main.temp/10;
             var titleText = document.createTextNode(temp.toFixed(2));
